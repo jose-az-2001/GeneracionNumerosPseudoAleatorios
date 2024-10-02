@@ -30,3 +30,36 @@
 *.exe
 *.out
 *.app
+
+
+# Compiled object files
+*.o
+
+# Compiled binary files
+numeros_pseudoaleatorios
+
+# CMake files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Visual Studio Code settings
+.vscode/
+
+# macOS system files
+.DS_Store
+
+# Linux system files
+*~
+
+# Backup files
+*.bak
+*.swp
+*.tmp
+
+# Logs
+*.log
+
+# Compiled binaries
+/bin/
