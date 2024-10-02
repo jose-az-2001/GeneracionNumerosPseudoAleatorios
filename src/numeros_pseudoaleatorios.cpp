@@ -26,7 +26,7 @@ void mostrarMenu() {
 
 int main() {
     int opcion;
-    int seed, cantidad;
+    int seed1, seed2, cantidad;
 
     do {
         mostrarMenu();
@@ -35,17 +35,23 @@ int main() {
         switch(opcion) {
             case 1:
                 cout << "Introduce la semilla para el algoritmo de cuadrados medios: ";
-                cin >> seed;
+                cin >> seed1;
                 cout << "Introduce la cantidad de números a generar: ";
                 cin >> cantidad;
                 cout << "Ejecutando Algoritmo de Cuadrados Medios..." << endl;
-                cuadradosMedios(seed, cantidad);
+                cuadradosMedios(seed1, cantidad);
                 break;
-            /* case 2:
+            case 2:
+                cout << "Introduce la primer semilla para el algoritmo de productos medios: ";
+                cin >> seed1;
+                cout << "Introduce la segunda semilla para el algoritmo de productos medios: ";
+                cin >> seed2;
+                cout << "Introduce la cantidad de números a generar: ";
+                cin >> cantidad;
                 cout << "Ejecutando Algoritmo de Productos Medios..." << endl;
-                productosMedios();  
+                productosMedios(seed1, seed2, cantidad);  
                 break;
-            case 3:
+            /* case 3:
                 cout << "Ejecutando Algoritmo de Multiplicador Constante..." << endl;
                 multiplicadorConstante();  
                 break;
