@@ -25,7 +25,7 @@ Para compilar y ejecutar el proyecto, necesitarás:
 Para compilar el archivo fuente, usa el siguiente comando:
 
 ```bash
-g++ -o numeros_pseudoaleatoreos src/numeros_pseudoaleatoreos.cpp
+g++ -o numeros_pseudoaleatorios src/numeros_pseudoaleatorios.cpp
 ./cuadrados_medios
 ```
 
@@ -46,5 +46,5 @@ make
 
 Ejecucion del programa: 
 ```bash
-./numeros_pseudoaleatoreos
+./numeros_pseudoaleatorios
 ```
