@@ -51,11 +51,17 @@ int main() {
                 cout << "Ejecutando Algoritmo de Productos Medios..." << endl;
                 productosMedios(seed1, seed2, cantidad);  
                 break;
-            /* case 3:
+            case 3:
+                cout << "Introduce la semilla para el algoritmo de multiplicador constante: ";
+                cin >> seed1;
+                cout << "Introduce la constante para el algoritmo de multiplicador constante: ";
+                cin >> seed2;
+                cout << "Introduce la cantidad de números a generar: ";
+                cin >> cantidad;
                 cout << "Ejecutando Algoritmo de Multiplicador Constante..." << endl;
-                multiplicadorConstante();  
+                multiplicadorConstante(seed1, seed2, cantidad);  
                 break;
-            case 4:
+            /* case 4:
                 cout << "Ejecutando Algoritmo Congruencial Aditivo..." << endl;
                 congruencialAditivo(); 
                 break;
