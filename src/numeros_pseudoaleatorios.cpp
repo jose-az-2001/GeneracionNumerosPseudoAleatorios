@@ -27,7 +27,7 @@ void mostrarMenu() {
 
 int main() {
     int opcion;
-    int seed1, seed2, cantidad;
+    int seed1, seed2, cantidad, c, m;
     string secuencia;
 
     do {
@@ -74,11 +74,21 @@ int main() {
                 cout << "Ejecutando Algoritmo Congruencial Aditivo..." << endl;
                 congruencialAditivo(secuencia, seed1, cantidad); 
                 break;
-            /* case 5:
+            case 5:
+                cout << "Introduce el numero inicial para el Algoritmo Congruencial Mixto Lineal: ";
+                cin >> seed1;
+                cout << "Introduce el numero a multiplicar para el Algoritmo Congruencial Mixto Lineal: ";
+                cin >> seed2;
+                cout << "Introduce el numero a sumar para el Algoritmo Congruencial Mixto Lineal: ";
+                cin >> c;
+                cout << "Introduce el numero M para el Algoritmo Congruencial Mixto Lineal: ";
+                cin >> m;
+                cout << "Introduce la cantidad de números a generar: ";
+                cin >> cantidad;
                 cout << "Ejecutando Algoritmo Congruencial Mixto Lineal..." << endl;
-                congruencialMixto();  
+                congruencialMixto(seed1, seed2, c, m, cantidad);  
                 break;
-            case 6:
+            /* case 6:
                 cout << "Ejecutando Algoritmo Congruencial Multiplicativo..." << endl;
                 congruencialMultiplicativo();  
                 break; */
