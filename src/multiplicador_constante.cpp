@@ -1,5 +1,5 @@
 #include <iostream>
-#include <iomanip> // Incluye esta librería para manejar el formato
+#include <iomanip> 
 #include "multiplicador_constante.h"
 
 using namespace std;

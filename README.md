@@ -29,6 +29,7 @@ Para compilar el archivo fuente, asegúrate de incluir todos los archivos de imp
 
 ```bash
 g++ -o numeros_pseudoaleatorios src/numeros_pseudoaleatorios.cpp src/cuadrados_medios.cpp src/productos_medios.cpp src/multiplicador_constante.cpp src/congruencial_aditivo.cpp src/congruencial_mixto.cpp src/congruencial_multiplicativo.cpp
+./numeros_pseudoaleatorios
 ```
 
 Usando CMake
