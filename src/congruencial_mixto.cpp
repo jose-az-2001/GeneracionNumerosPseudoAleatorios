@@ -1,6 +1,6 @@
 #include <iostream>
 #include "congruencial_mixto.h"
-#include <iomanip>  // Para usar fixed y setprecision
+#include <iomanip>
 
 using namespace std;
 
