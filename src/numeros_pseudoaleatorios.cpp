@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "cuadrados_medios.h"
 #include "productos_medios.h"
 #include "multiplicador_constante.h"
@@ -26,7 +27,8 @@ void mostrarMenu() {
 
 int main() {
     int opcion;
-    int seed1, seed2, cantidad;
+    int seed1, seed2, cantidad, c, m;
+    string secuencia;
 
     do {
         mostrarMenu();
@@ -51,19 +53,42 @@ int main() {
                 cout << "Ejecutando Algoritmo de Productos Medios..." << endl;
                 productosMedios(seed1, seed2, cantidad);  
                 break;
-            /* case 3:
+            case 3:
+                cout << "Introduce la semilla para el algoritmo de multiplicador constante: ";
+                cin >> seed1;
+                cout << "Introduce la constante para el algoritmo de multiplicador constante: ";
+                cin >> seed2;
+                cout << "Introduce la cantidad de números a generar: ";
+                cin >> cantidad;
                 cout << "Ejecutando Algoritmo de Multiplicador Constante..." << endl;
-                multiplicadorConstante();  
+                multiplicadorConstante(seed1, seed2, cantidad);  
                 break;
             case 4:
+                cout << "Introduce la secuencia para el algoritmo de congruencial aditivo: ";
+                cin.ignore();  // Ignorar el salto de línea anterior que puede causar problemas con getline()
+                getline(cin, secuencia);  // Usar getline para leer toda la secuencia con espacios
+                cout << "Introduce la constante para el algoritmo de congruencial aditivo: ";
+                cin >> seed1;
+                cout << "Introduce la cantidad de números a generar: ";
+                cin >> cantidad;
                 cout << "Ejecutando Algoritmo Congruencial Aditivo..." << endl;
-                congruencialAditivo(); 
+                congruencialAditivo(secuencia, seed1, cantidad); 
                 break;
             case 5:
+                cout << "Introduce el numero inicial para el Algoritmo Congruencial Mixto Lineal: ";
+                cin >> seed1;
+                cout << "Introduce el numero a multiplicar para el Algoritmo Congruencial Mixto Lineal: ";
+                cin >> seed2;
+                cout << "Introduce el numero a sumar para el Algoritmo Congruencial Mixto Lineal: ";
+                cin >> c;
+                cout << "Introduce el numero M para el Algoritmo Congruencial Mixto Lineal: ";
+                cin >> m;
+                cout << "Introduce la cantidad de números a generar: ";
+                cin >> cantidad;
                 cout << "Ejecutando Algoritmo Congruencial Mixto Lineal..." << endl;
-                congruencialMixto();  
+                congruencialMixto(seed1, seed2, c, m, cantidad);  
                 break;
-            case 6:
+            /* case 6:
                 cout << "Ejecutando Algoritmo Congruencial Multiplicativo..." << endl;
                 congruencialMultiplicativo();  
                 break; */
