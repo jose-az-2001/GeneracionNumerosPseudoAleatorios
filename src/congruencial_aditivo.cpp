@@ -1,9 +1,30 @@
 #include <iostream>
 #include "congruencial_aditivo.h"
+#include <vector>
+#include <sstream>
+#include <string>
+#include <iomanip>
 
 using namespace std;
 
-void congruencialAditivo() {
-    // Aquí va la implementación del algoritmo de productos medios
-    cout << "Algoritmo de congruencial aditivo ejecutado." << endl;
+void congruencialAditivo(string secuencia, int m, int cantidad) {
+    int longitud = 0, nuevoNumero = 0;
+    double resultado = 0.0;
+    vector<int> numeros;
+    
+    istringstream stream(secuencia);
+    int numero;
+    while (stream >> numero) {
+        numeros.push_back(numero);
+    }
+    
+    longitud = numeros.size();
+
+    for (int i = 0; i < cantidad; i++) {
+        nuevoNumero = (numeros[0] + numeros[longitud - 1]) % m;
+        resultado = static_cast<double>(nuevoNumero) / (m - 1);
+        cout << "Número generado [" << i + 1 << "]:" << fixed << setprecision(4) << resultado << endl;
+        numeros.erase(numeros.begin());
+        numeros.push_back(nuevoNumero);
+    }
 }

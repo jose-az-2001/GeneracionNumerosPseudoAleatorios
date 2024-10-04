@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "cuadrados_medios.h"
 #include "productos_medios.h"
 #include "multiplicador_constante.h"
@@ -27,6 +28,7 @@ void mostrarMenu() {
 int main() {
     int opcion;
     int seed1, seed2, cantidad;
+    string secuencia;
 
     do {
         mostrarMenu();
@@ -61,11 +63,18 @@ int main() {
                 cout << "Ejecutando Algoritmo de Multiplicador Constante..." << endl;
                 multiplicadorConstante(seed1, seed2, cantidad);  
                 break;
-            /* case 4:
+            case 4:
+                cout << "Introduce la secuencia para el algoritmo de congruencial aditivo: ";
+                cin.ignore();  // Ignorar el salto de línea anterior que puede causar problemas con getline()
+                getline(cin, secuencia);  // Usar getline para leer toda la secuencia con espacios
+                cout << "Introduce la constante para el algoritmo de congruencial aditivo: ";
+                cin >> seed1;
+                cout << "Introduce la cantidad de números a generar: ";
+                cin >> cantidad;
                 cout << "Ejecutando Algoritmo Congruencial Aditivo..." << endl;
-                congruencialAditivo(); 
+                congruencialAditivo(secuencia, seed1, cantidad); 
                 break;
-            case 5:
+            /* case 5:
                 cout << "Ejecutando Algoritmo Congruencial Mixto Lineal..." << endl;
                 congruencialMixto();  
                 break;
