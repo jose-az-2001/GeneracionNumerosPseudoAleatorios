@@ -4,6 +4,7 @@
 #include <sstream>
 #include <string>
 #include <iomanip>
+#include "truncar_decimales.h"
 
 using namespace std;
 
@@ -23,7 +24,7 @@ void congruencialAditivo(string secuencia, int m, int cantidad) {
     for (int i = 0; i < cantidad; i++) {
         nuevoNumero = (numeros[0] + numeros[longitud - 1]) % m;
         resultado = static_cast<double>(nuevoNumero) / (m - 1);
-        cout << "Número generado [" << i + 1 << "]:" << fixed << setprecision(4) << resultado << endl;
+        cout << "Número generado [" << i + 1 << "]:" << fixed << setprecision(4) << truncarA4Decimales(resultado) << endl;
         numeros.erase(numeros.begin());
         numeros.push_back(nuevoNumero);
     }

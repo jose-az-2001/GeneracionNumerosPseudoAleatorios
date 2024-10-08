@@ -28,7 +28,7 @@ Para compilar el archivo fuente, usa el siguiente comando:
 Para compilar el archivo fuente, asegúrate de incluir todos los archivos de implementación necesarios. Usa el siguiente comando:
 
 ```bash
-g++ -o numeros_pseudoaleatorios src/numeros_pseudoaleatorios.cpp src/cuadrados_medios.cpp src/productos_medios.cpp src/multiplicador_constante.cpp src/congruencial_aditivo.cpp src/congruencial_mixto.cpp src/congruencial_multiplicativo.cpp
+g++ -o numeros_pseudoaleatorios src/numeros_pseudoaleatorios.cpp src/cuadrados_medios.cpp src/productos_medios.cpp src/multiplicador_constante.cpp src/congruencial_aditivo.cpp src/congruencial_mixto.cpp src/congruencial_multiplicativo.cpp src/truncar_decimales.cpp
 ./numeros_pseudoaleatorios
 ```
 

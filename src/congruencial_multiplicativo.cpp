@@ -2,9 +2,11 @@
 #include "congruencial_multiplicativo.h"
 #include <iomanip>
 #include <cmath>
-#include <unordered_set>  // Para rastrear los números generados y detectar ciclos
+#include <unordered_set>
+#include "truncar_decimales.h"
 
 using namespace std;
+
 
 void congruencialMultiplicativo(int X, int k, int g) {
     int m = pow(2, g);  
@@ -18,7 +20,7 @@ void congruencialMultiplicativo(int X, int k, int g) {
             generados.insert(X);  
             nuevoNumero = (a * X) % m;
             resultado = static_cast<double>(nuevoNumero) / (m - 1);
-            cout << "Número generado [" << ciclo + 1 << "]: " << fixed << setprecision(4) << resultado << endl;
+            cout << "Número generado [" << ciclo + 1 << "]: " << fixed << setprecision(4) << truncarA4Decimales(resultado) << endl;
             X = nuevoNumero;
             ciclo++;
         }
