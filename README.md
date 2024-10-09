@@ -35,7 +35,7 @@ g++ -o numeros_pseudoaleatorios src/numeros_pseudoaleatorios.cpp src/cuadrados_m
 Usando CMake
 Clona el repositorio:
 ```bash
-git clone https://github.com/tu-usuario/GeneracionNumerosPseudoAleatorios.git
+git clone https://github.com/jose-az-2001/GeneracionNumerosPseudoAleatorios.git
 cd GeneracionNumerosPseudoAleatorios
 ```
 
